@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-        app: './src/app.js'
+        app: './src/app.jsx',
     },
     output: {
         filename: '[name].js',
@@ -9,7 +9,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.m?js$/,
+                test: /\.m?jsx$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
@@ -20,5 +20,4 @@ module.exports = {
             }
         ]
     }
-
 }
